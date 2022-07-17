@@ -7,7 +7,7 @@ void fill_numbase_buff(unsigned int num, unsigned int base,
 		       char *buff, int buff_size);
 
 /**
- * get_int - gets a character pointer to new string containing int
+ * get_int - gets a character pointer to new string containing integer
  * @num: number to convert to string
  *
  * Return: character pointer to newly created string. NULL if malloc fails.
@@ -24,7 +24,7 @@ char *get_int(int num)
 
 	if (num < 0 || num_l < 0)
 		length++; /* negative sign */
-	ret = malloc(length + 1); /* create new string */
+	ret = malloc(length + 1); /* to create new string */
 	if (!ret)
 		return (NULL);
 
@@ -57,7 +57,7 @@ unsigned int _abs(int i)
  */
 int get_numbase_len(unsigned int num, unsigned int base)
 {
-	int len = 1; /* all numbers contain atleast one digit */
+	int len = 1; /* all numbers contain at least one digit */
 
 	while (num > base - 1)
 	{
@@ -66,6 +66,7 @@ int get_numbase_len(unsigned int num, unsigned int base)
 	}
 	return (len);
 }
+
 
 /**
  * fill_numbase_buff - fills buffer with correct numbers up to base 36
