@@ -1,8 +1,11 @@
 #include "monty.h"
 
 void monty_rotl(stack_t **stack, unsigned int line_number);
+
 void monty_rotr(stack_t **stack, unsigned int line_number);
+
 void monty_stack(stack_t **stack, unsigned int line_number);
+
 void monty_queue(stack_t **stack, unsigned int line_number);
 
 /**
